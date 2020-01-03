@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 
     <title>Contact Us</title>
   </head>
@@ -38,28 +39,23 @@
 
 <!-- Contact -->
 <center><h1 style="margin-top: 50px;">Contact Us</h1></center>
-<hr style="width: 230px;border-width: 5px">
+<hr style="width: 230px;border-width: 5px"><br>
+<h2 style="text-align: center;">Kritik dan Saran</h2>
  <div class="container">    
-  <form style="margin-top: 130px;">
-    <div class="form-group">
+  <form style="margin-top: 80px;" onsubmit="return false">
       <label for="nama">Nama :</label>
-      <input type="text" class="form-control" placeholder="Masukan Nama Anda">
-    </div>
-    <div class="form-group">
+      <input type="text" class="form-control" id="input" placeholder="Masukan Nama Anda">
+ 
       <label for="alamat">Alamat :</label>
-      <input type="text" class="form-control" id="alamat" placeholder="Masukan Email Anda">
-    </div>
-    <div class="form-group">
+      <input type="text" class="form-control" id="input2" placeholder="Masukan Email Anda">
+ 
       <label for="pesan">Pesan :</label>
-      <textarea class="form-control" placeholder="Masukan Pesan" rows="10"></textarea>
-    </div>      
-    <button onclick="my()" type="submit" class="btn btn-primary">Submit</button>
+      <textarea class="form-control" placeholder="Masukan Pesan" rows="10" id="input3"></textarea>
+     <br>
+    <button onclick="abc(), coba()" type="submit" class="btn  btn-outline-primary">Submit</button>
   </form>
    </div>
-   <script>
-     function my() {
-      confirm("Pesan Anda Terkirim");
-     }
+   
    </script><br><br><br><br><br>
 <!-- Contact -->
 
